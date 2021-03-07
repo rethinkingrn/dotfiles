@@ -34,8 +34,8 @@ exec --no-startup-id dunst
 exec_always --no-startup-id autotiling
 exec_always --no-startup-id picom --experimental-backends
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id /home/matthew/.screenlayout/intel.sh
-exec --no-startup-id /home/matthew/.screenlayout/nvidia.sh
+exec --no-startup-id ~/.screenlayout/intel.sh
+exec --no-startup-id ~/.screenlayout/nvidia.sh
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -54,7 +54,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 #############################################################
 # start rofi
-bindsym $mod+d exec --no-startup-id /home/matthew/.config/rofi/launchers/text/launcher.sh
+bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/text/launcher.sh
 
 #screenshot tool
 
