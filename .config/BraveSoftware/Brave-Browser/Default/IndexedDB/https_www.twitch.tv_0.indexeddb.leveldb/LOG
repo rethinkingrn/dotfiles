@@ -1,8 +1,0 @@
-2021/03/06-09:17:28.424 4471 Reusing MANIFEST /home/matthew/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.twitch.tv_0.indexeddb.leveldb/MANIFEST-000001
-2021/03/06-09:17:28.424 4471 Recovering log #13
-2021/03/06-09:17:28.424 4471 Reusing old log /home/matthew/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.twitch.tv_0.indexeddb.leveldb/000013.log 
-2021/03/06-09:18:00.434 4471 Level-0 table #17: started
-2021/03/06-09:18:00.434 4471 Level-0 table #17: 0 bytes OK
-2021/03/06-09:18:00.441 4471 Delete type=0 #13
-2021/03/06-09:18:00.442 4471 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2021/03/06-09:18:00.442 4471 Manual compaction at level-1 from (begin) .. (end); will stop at (end)

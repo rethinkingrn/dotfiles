@@ -24,24 +24,18 @@ font pango:monospace 8
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+exec --no-startup-id dunst
 exec_always --no-startup-id autotiling
 exec_always --no-startup-id picom --experimental-backends
-
-exec --no-startup-id dunst
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id /home/matthew/.screenlayout/intel.sh
 exec --no-startup-id /home/matthew/.screenlayout/nvidia.sh
-
-
-
-
-
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -58,13 +52,13 @@ bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
+#############################################################
+# start rofi
+bindsym $mod+d exec --no-startup-id /home/matthew/.config/rofi/launchers/text/launcher.sh
 
-# start rofi (a program launcher)
-bindsym $mod+t exec --no-startup-id //home/matthew/.config/rofi/launchers/text/launcher.sh
+#screenshot tool
 
-# starts flameshot (screenshotting tool)
 bindsym Print exec --no-startup-id flameshot gui
-
 
 # change focus
 bindsym $mod+j focus left
@@ -160,15 +154,6 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-# class                 border  backgr. text    indicator child_border
-client.focused          #829ba1 #829ba1 #ffffff #829ba1   #829ba1
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #2e3440 #3b4252 #ffffff #2e3440   #4c566a
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-
-client.background       #ffffff
-
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -194,22 +179,32 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+r mode "resize"
+# class                 border  backgr. text    indicator child_border
+client.focused          #285577 #285577 #ffffff #285577   #285577
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
 
 
-# You can also use any non-zero value if you'd like to have a border
 for_window [class=".*"] border pixel 3
-gaps outer 1
+
 gaps inner 25
+gaps outer 5
+
+bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+        position top
+        font pango:FontAwesome 8
         tray_output none
-        font pango: FontAwesome 8
-    status_command /usr/bin/bumblebee-status \
-     -m cpu sensors memory disk nic ping network_traffic battery datetime pasink pasource\
-     -p time.format="%H:%M" sensors.path=/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input nic.include=wlp2s0 nic.exclude=vmnet8,vmnet1,enp3s0,lo ping.address=8.8.8.8\
-     -t nord-powerline
-     position top 
+	status_command /usr/bin/bumblebee-status \
+		-m cpu sensors memory disk network_traffic battery datetime pasink pasource\
+                -p sensors.path:/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input \
+		-t nord-powerline
 }
+

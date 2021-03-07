@@ -1,5 +1,0 @@
-2021/03/05-12:10:14.078 1411b Reusing MANIFEST /home/matthew/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.nordtheme.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/03/05-12:10:46.157 1430b Level-0 table #5: started
-2021/03/05-12:10:46.167 1430b Level-0 table #5: 1927 bytes OK
-2021/03/05-12:10:46.173 1430b Delete type=0 #3
-2021/03/05-12:10:46.173 1430b Manual compaction at level-0 from (begin) .. (end); will stop at (end)

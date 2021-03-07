@@ -1,8 +1,0 @@
-game:
-  arch: win32
-  exe: /home/matthew/Games/osu/drive_c/osu/EZPPClient.exe
-  prefix: /home/matthew/Games/osu
-system:
-  pulse_latency: true
-wine:
-  version: tkg-osu-4.6-x86_64

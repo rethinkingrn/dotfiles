@@ -1,2 +1,0 @@
-[2021-03-05 16:23:41.948] [renderer1] [error] [text file model] handleSaveError(3) - exit - resulted in a save error: Error: Unable to write file '/home/matthew/.config/dunst/dunstrc' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/home/matthew/.config/dunst/dunstrc') file:///home/matthew/.config/dunst/dunstrc
-[2021-03-05 16:23:43.751] [renderer1] [error] [text file model] handleSaveError(3) - exit - resulted in a save error: Error: No polkit authentication agent found. file:///home/matthew/.config/dunst/dunstrc

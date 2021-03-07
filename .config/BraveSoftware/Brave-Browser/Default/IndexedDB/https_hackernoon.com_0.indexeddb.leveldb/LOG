@@ -1,5 +1,0 @@
-2021/03/06-18:15:41.950 907e Reusing MANIFEST /home/matthew/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_hackernoon.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/03/06-18:16:01.000 8442 Level-0 table #5: started
-2021/03/06-18:16:01.009 8442 Level-0 table #5: 1112 bytes OK
-2021/03/06-18:16:01.013 8442 Delete type=0 #3
-2021/03/06-18:16:01.013 8442 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
