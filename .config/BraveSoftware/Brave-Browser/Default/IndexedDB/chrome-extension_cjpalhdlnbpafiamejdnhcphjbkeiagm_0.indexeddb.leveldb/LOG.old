@@ -1,0 +1,8 @@
+2021/03/06-17:07:43.870 4a61 Reusing MANIFEST /home/matthew/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/chrome-extension_cjpalhdlnbpafiamejdnhcphjbkeiagm_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/06-17:07:43.870 4a61 Recovering log #73
+2021/03/06-17:07:43.870 4a61 Reusing old log /home/matthew/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/chrome-extension_cjpalhdlnbpafiamejdnhcphjbkeiagm_0.indexeddb.leveldb/000073.log 
+2021/03/06-17:07:45.879 49b8 Level-0 table #77: started
+2021/03/06-17:07:45.879 49b8 Level-0 table #77: 0 bytes OK
+2021/03/06-17:07:45.889 49b8 Delete type=0 #73
+2021/03/06-17:07:45.889 49b8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/03/06-17:07:45.889 49b8 Manual compaction at level-1 from (begin) .. (end); will stop at (end)

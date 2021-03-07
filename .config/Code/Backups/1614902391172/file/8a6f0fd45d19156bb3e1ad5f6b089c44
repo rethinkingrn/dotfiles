@@ -1,0 +1,71 @@
+file:///home/matthew/.config/picom.conf {"mtime":1614833493225,"ctime":1614833493225,"size":2303,"etag":"36hnfq09e2c9","orphaned":false}
+#----- TRANSPARENCY -----------------------------------------------------------------
+opacity-rule = [
+  "100:class_g = 'gnome-terminal' && focused",
+  "100:class_g = 'gnome-terminal' && !focused"
+];
+
+#----- SHADOW -----------------------------------------------------------------
+
+shadow                = true;	# Enabled client-side shadows on windows
+#shadow-radius         = 14;      # The blur radius for shadows (default 12)
+#shadow-offset-x       = 8;     # The left offset for shadows (default -15)
+#shadow-offset-y       = 8;     # The top offset for shadows (default -15)
+#shadow-hex = "#503a34";
+#shadow-hex = "#FFFF";
+#shadow-exclude = [ "name = 'Polybar tray window'", "class_g = 'trayer'" ];
+#----- VSYNC ------------------------------------------------------------------
+
+backend               = "glx";
+vsync                 = true;
+refresh-rate          = 144;
+glx-no-stencil        = true;
+
+#----- WORKSPACE FADING -------------------------------------------------------
+
+fading                = true;
+fade-delta            = 5;
+fade-in-step          = 0.03;
+fade-out-step         = 0.03;
+frame-opacity         = 1;
+inactive-dim          = 0.00;
+
+#----- UNUSED OPTIONS ---------------------------------------------------------
+
+#no-dock-shadow        = true;  # Avoid drawing shadows on dock/panel windows
+#no-dnd-shadow         = false;	# Don't draw shadows on drag-and-drop windows
+#clear-shadow          = false; # Zero the part of the shadow's mask behind the window (experimental)
+
+#shadow-exclude = [
+#];
+
+#----- BLUR -------------------------------------------------------------------
+
+#blur-background       = false;
+#blur-background-frame = false;
+#blur-background-fixed = false;
+#blur-kern             = "3x3box";
+blur-method           = "dual_kawase";
+blur-strength         = 5;
+
+#blur-background-exclude = [ 
+#	"class_g = 'scratch_term'",
+#	"class_g = 'Remmina'"
+#	"class_g = 'Zoom'",
+#	"class_g = 'Polybar'",
+#	"class_g = 'Rofi'",
+#	"class_g = 'Dunst'",
+#	"class_g = 'Firefox'",
+#	"class_g = 'Steam'",
+#	"class_g = 'Nautilus'",
+#	"class_g = 'Alacritty'",
+#	"class_g = 'Gnome-screenshot'"
+#];
+
+#----- ROUNDED CORNERS --------------------------------------------------------
+
+#corner-radius = 15;
+#rounded-corners-exclude = [
+#	"class_g = 'Rofi'",
+#	"class_g = 'Polybar'"
+#];

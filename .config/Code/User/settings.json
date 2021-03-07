@@ -1,0 +1,10 @@
+{
+    "glassit-linux.opacity": 85,
+    "workbench.colorTheme": "Nord",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
+}

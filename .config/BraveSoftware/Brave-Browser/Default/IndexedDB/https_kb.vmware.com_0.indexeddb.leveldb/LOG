@@ -1,0 +1,5 @@
+2021/03/06-15:51:05.999 24b3 Reusing MANIFEST /home/matthew/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_kb.vmware.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/06-15:51:12.507 284a Level-0 table #5: started
+2021/03/06-15:51:12.514 284a Level-0 table #5: 128127 bytes OK
+2021/03/06-15:51:12.521 284a Delete type=0 #3
+2021/03/06-15:51:12.521 284a Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,0 +1,6 @@
+2021/03/06-15:57:01.153 7c0 Reusing MANIFEST /home/matthew/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2021/03/06-15:57:01.155 7c0 Recovering log #494
+2021/03/06-15:57:01.156 7c0 Reusing old log /home/matthew/.config/discord/Local Storage/leveldb/000494.log 
+2021/03/06-16:15:11.726 199f Level-0 table #498: started
+2021/03/06-16:15:11.730 199f Level-0 table #498: 21686 bytes OK
+2021/03/06-16:15:11.735 199f Delete type=0 #494

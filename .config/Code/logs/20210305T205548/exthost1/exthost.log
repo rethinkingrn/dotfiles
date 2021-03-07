@@ -1,0 +1,156 @@
+[2021-03-05 20:55:49.968] [exthost] [info] extension host started
+[2021-03-05 20:55:50.065] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2021-03-05 20:55:50.065] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2021-03-05 20:55:50.071] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onLanguage:html"}
+[2021-03-05 20:55:50.071] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2021-03-05 20:55:50.075] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"extensionId":{"value":"vscode.html-language-features","_lower":"vscode.html-language-features"},"activationEvent":"onLanguage:html"}
+[2021-03-05 20:55:50.075] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/html-language-features/client/dist/node/htmlClientMain
+[2021-03-05 20:55:50.094] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-03-05 20:55:50.094] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/debug-auto-launch/dist/extension
+[2021-03-05 20:55:50.097] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-03-05 20:55:50.097] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/git/dist/main
+[2021-03-05 20:55:50.118] [exthost] [info] ExtensionService#_doActivateExtension nowsci.glassit-linux {"startup":true,"extensionId":{"value":"nowsci.glassit-linux","_lower":"nowsci.glassit-linux"},"activationEvent":"*"}
+[2021-03-05 20:55:50.118] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/matthew/.vscode/extensions/nowsci.glassit-linux-1.0.0/extension.js
+[2021-03-05 20:55:50.410] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-03-05 20:55:50.410] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/github/dist/extension.js
+[2021-03-05 20:55:50.433] [exthost] [info] eager extensions activated
+[2021-03-05 20:55:50.442] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-03-05 20:55:50.442] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2021-03-05 20:55:50.509] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":false,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"onStartupFinished"}
+[2021-03-05 20:55:50.509] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2021-03-05 20:55:50.511] [exthost] [info] ExtensionService#_doActivateExtension vscode.testing-editor-contributions {"startup":false,"extensionId":{"value":"vscode.testing-editor-contributions","_lower":"vscode.testing-editor-contributions"},"activationEvent":"onStartupFinished"}
+[2021-03-05 20:55:50.511] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/testing-editor-contributions/dist/extension.js
+[2021-03-05 20:55:50.542] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2021-03-05 20:55:50.542] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/github-authentication/dist/extension.js
+[2021-03-05 20:56:53.618] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"extensionId":{"value":"vscode.extension-editing","_lower":"vscode.extension-editing"},"activationEvent":"onLanguage:typescript"}
+[2021-03-05 20:56:53.618] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/extension-editing/dist/extensionEditingMain
+[2021-03-05 20:56:53.636] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"extensionId":{"value":"vscode.typescript-language-features","_lower":"vscode.typescript-language-features"},"activationEvent":"onLanguage:typescript"}
+[2021-03-05 20:56:53.636] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/typescript-language-features/dist/extension
+[2021-03-05 21:29:21.792] [exthost] [error] [vscode.emmet] provider FAILED
+[2021-03-05 21:29:21.801] [exthost] [error] Error: Unable to find matching pair for < at char 585
+	at t.a.error (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:13638)
+	at f (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:3423)
+	at u (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:45708)
+	at l (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:45830)
+	at /opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:46456
+	at h (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:46563)
+	at C (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:47494)
+	at t.default (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:47904)
+	at Object.t.getRootNode (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:12761)
+	at t.DefaultCompletionItemProvider.provideCompletionItemsInternal (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:59332)
+	at t.DefaultCompletionItemProvider.provideCompletionItems (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:58225)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:167643
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:7538
+	at new Promise (<anonymous>)
+	at Object.p [as asPromise] (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:7510)
+	at U.provideCompletionItems (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:167614)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:186065
+	at Se._withAdapter (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:176060)
+	at Se.$provideCompletionItems (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:186041)
+	at u._doInvokeHandler (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:10509)
+	at u._invokeHandler (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:10201)
+	at u._receiveRequest (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:8820)
+	at u._receiveOneMessage (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:7673)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:5782
+	at p.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+	at g.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:15443)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:106:29119
+	at p.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+	at g.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:15443)
+	at t._receiveMessage (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:20693)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:17587
+	at p.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+	at l.acceptChunk (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:12808)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:12156
+	at Socket.E (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:106:12375)
+	at Socket.emit (events.js:315:20)
+	at addChunk (_stream_readable.js:295:12)
+	at readableAddChunk (_stream_readable.js:271:9)
+	at Socket.Readable.push (_stream_readable.js:212:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-03-05 21:29:22.034] [exthost] [error] [vscode.emmet] provider FAILED
+[2021-03-05 21:29:22.034] [exthost] [error] Error: Unable to find matching pair for < at char 585
+	at t.a.error (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:13638)
+	at f (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:3423)
+	at u (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:45708)
+	at l (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:45830)
+	at /opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:46456
+	at h (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:46563)
+	at C (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:47494)
+	at t.default (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:47904)
+	at Object.t.getRootNode (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:12761)
+	at t.DefaultCompletionItemProvider.provideCompletionItemsInternal (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:59332)
+	at t.DefaultCompletionItemProvider.provideCompletionItems (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:58225)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:167643
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:7538
+	at new Promise (<anonymous>)
+	at Object.p [as asPromise] (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:7510)
+	at U.provideCompletionItems (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:167614)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:186065
+	at Se._withAdapter (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:176060)
+	at Se.$provideCompletionItems (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:186041)
+	at u._doInvokeHandler (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:10509)
+	at u._invokeHandler (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:10201)
+	at u._receiveRequest (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:8820)
+	at u._receiveOneMessage (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:7673)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:5782
+	at p.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+	at g.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:15443)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:106:29119
+	at p.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+	at g.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:15443)
+	at t._receiveMessage (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:20693)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:17587
+	at p.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+	at l.acceptChunk (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:12808)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:12156
+	at Socket.E (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:106:12375)
+	at Socket.emit (events.js:315:20)
+	at addChunk (_stream_readable.js:295:12)
+	at readableAddChunk (_stream_readable.js:271:9)
+	at Socket.Readable.push (_stream_readable.js:212:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-03-05 21:29:22.105] [exthost] [error] [vscode.emmet] provider FAILED
+[2021-03-05 21:29:22.105] [exthost] [error] Error: Unable to find matching pair for < at char 585
+	at t.a.error (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:13638)
+	at f (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:3423)
+	at u (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:45708)
+	at l (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:45830)
+	at /opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:46456
+	at h (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:46563)
+	at C (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:47494)
+	at t.default (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:47904)
+	at Object.t.getRootNode (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:12761)
+	at t.DefaultCompletionItemProvider.provideCompletionItemsInternal (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:59332)
+	at t.DefaultCompletionItemProvider.provideCompletionItems (/opt/visual-studio-code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:58225)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:167643
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:7538
+	at new Promise (<anonymous>)
+	at Object.p [as asPromise] (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:7510)
+	at U.provideCompletionItems (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:167614)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:186065
+	at Se._withAdapter (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:176060)
+	at Se.$provideCompletionItems (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:186041)
+	at u._doInvokeHandler (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:10509)
+	at u._invokeHandler (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:10201)
+	at u._receiveRequest (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:8820)
+	at u._receiveOneMessage (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:7673)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:5782
+	at p.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+	at g.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:15443)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:106:29119
+	at p.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+	at g.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:15443)
+	at t._receiveMessage (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:20693)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:17587
+	at p.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+	at l.acceptChunk (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:12808)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:12156
+	at Socket.E (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:106:12375)
+	at Socket.emit (events.js:315:20)
+	at addChunk (_stream_readable.js:295:12)
+	at readableAddChunk (_stream_readable.js:271:9)
+	at Socket.Readable.push (_stream_readable.js:212:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-03-05 21:48:29.979] [exthost] [info] extension host terminating: received terminate message from renderer
+[2021-03-05 21:48:30.988] [exthost] [info] exiting with code 0
