@@ -8,6 +8,8 @@ how the hell does this work
 
 wm: i3-gaps\
 compositor: picom-tryone\
-crap on da screen: visual studio code, ranger, gotop, cava, pfetch\
+crap on da screen: alacritty,  visual studio code, ranger, gotop, cava, pfetch\
+wallpaper from the wallpaper repo i have \
+gtk theme is nord \
 bar: bumblebee-status\
 os: ubuntu 20.04 lts
