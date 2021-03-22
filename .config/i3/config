@@ -33,7 +33,7 @@ exec_always --no-startup-id autotiling
 exec_always --no-startup-id picom --experimental-backends
 exec --no-startup-id ~/.screenlayout/intel.sh
 exec --no-startup-id ~/.screenlayout/nvidia.sh
-exec --no-startup-id feh --bg-fill /home/matthew/Downloads/asdfasd.png
+exec --no-startup-id feh --bg-fill /home/matthew/Downloads/anime-city-sunset-buildings-clouds-dawn-scenic-anime.jpeg
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -195,9 +195,9 @@ bar {
         font pango:FontAwesome 8
         tray_output none
 	status_command /usr/bin/bumblebee-status \
-		-m cpu sensors memory disk uptime network_traffic battery pasink pasource datetime \
+		-m cpu sensors memory disk uptime kernel network_traffic pasink pasource datetime \
                 -p sensors.path:/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input \
-		-t onedark-powerline
+		-t solarized
 }
 
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
