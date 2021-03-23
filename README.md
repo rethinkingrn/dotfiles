@@ -1,3 +1,5 @@
+# this branch buggin, stay on master pls
+
 # dotfiles
 how the hell does this work
 
