@@ -8,7 +8,7 @@ export ZSH="/home/matthew/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="ys"
+ZSH_THEME="awesomepanda"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -102,6 +102,10 @@ source $ZSH/oh-my-zsh.sh
 #alias sudo='doas'
 alias spotify='LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify'
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias updateall='paru -Syu'
+alias clean='paru -c'
+alias intel='optimus-manager --switch integrated'
+alias nvidia='optimus-manager --switch nvidia'
 pfetch
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
