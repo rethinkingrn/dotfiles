@@ -1,4 +1,6 @@
 # this branch buggin, stay on master pls
+# forget about everything i said, i currently use gentoo
+# so if you want dotfiles go gentoo branch
 
 # dotfiles
 how the hell does this work
