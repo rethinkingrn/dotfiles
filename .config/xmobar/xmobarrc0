@@ -1,0 +1,47 @@
+-- http://projects.haskell.org/xmobar/
+-- install xmobar with these flags: --flags="with_alsa" --flags="with_mpd" --flags="with_xft"  OR --flags="all_extensions"
+-- you can find weather location codes here: http://weather.noaa.gov/index.html
+
+Config { font    = "xft:Droid Sans:pixelsize=11:antialias=true:hinting=true"
+       , additionalFonts = [ "xft:Font Awesome 5 Free:pixelsize=11:antialias=true:hinting=true"
+                            , "xft:mononoki Nerd Font:pixelsize=11:antialias=true:hinting=true"
+                            , "xft:Iosevka:pixelsize=11:antialias=true:hinting=true"
+                            , "xft:mplus Nerd Font:pixelsize=11:antialias=true:hinting=true"
+                            , "xft:mplus Nerd Font Mono:pixelsize=11:antialias=true:hinting=true"
+                           ]
+       , bgColor = "#17181a"
+       , fgColor = "#bd93f9"
+       , position = Static { xpos = 0 , ypos = 0, width = 1920, height = 24 }
+       , lowerOnStart = True
+       , hideOnStart = False
+       , allDesktops = True
+       , persistent = True
+       , iconRoot = "/home/matthew/.xmonad/xpm/"  -- default: "."
+       , commands = [ 
+                      -- Time and date
+                      Run Date "<fn=4>\xf455</fn>  %b %d %Y - (%H:%M) " "date" 50
+                      -- Network up and down
+                    , Run Network "wlp2s0" ["-t"
+                              , "<fn=2>\xf176</fn> <rx>kb <fn=2>\xf175</fn> <tx>kb"
+                              ] 10
+
+                      -- Cpu usage in percent
+                    , Run Cpu ["-t", "<fn=4>\xf2db</fn> (<total>%)","-H","50","--high","red"] 20
+                    , Run Memory ["-t", "<fn=4>\xf91f</fn> <used>MB"] 10
+                      -- Disk space free
+                    , Run DiskU [("/", " <fn=4>\xf473</fn> <free> free")] [] 60
+                      -- Runs a standard shell command 'uname -r' to get kernel version
+                    , Run Com "uname" ["-r"] "" 3600
+                      -- Prints out the left side items such as workspaces, layout, etc.
+                      -- The workspaces are 'clickable' in my configs.
+                    , Run UnsafeStdinReader
+                      -- cpu core temperature monitor
+                    , Run CoreTemp       [ "--template" , " <core0>°C"] 10
+                    , Run Battery [ "-t", "<fn=5>\xf578</fn> <left>%"] 60
+                      ]
+                                                    
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = " <icon=haskell_20.xpm/> | %UnsafeStdinReader% | }{| <fc=#b3afc2> <icon=gen2.xpm/> %uname%</fc>  |<fc=#ff5555>%cpu% %coretemp%</fc>  | <fc=#ffb86c>%memory%</fc>  |<fc=#50fa7b>%disku%</fc> | <fc=#8be9fd>%wlp2s0%</fc> | %battery% | <fc=#6272a4>%date%</fc> "
+       }
+
