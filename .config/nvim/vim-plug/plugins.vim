@@ -16,4 +16,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " LightLine
+    Plug 'itchyny/lightline.vim'
 call plug#end()

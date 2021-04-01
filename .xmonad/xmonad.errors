@@ -7,9 +7,9 @@ xmonad.hs:219:78: warning: [-Wdeprecations]
 219 | myManageHook = manageDocks <+> (isFullscreen --> doFullFloat) <+> manageHook defaultConfig
     |                                                                              ^^^^^^^^^^^^^
 
-xmonad.hs:248:1: warning: [-Wtabs]
+xmonad.hs:247:1: warning: [-Wtabs]
     Tab character found here.
     Please use spaces instead.
     |
-248 |             , ("M-<Left>", sendMessage Shrink)
+247 |               , ("M-<Left>", sendMessage Shrink)
     | ^^^^^^^^

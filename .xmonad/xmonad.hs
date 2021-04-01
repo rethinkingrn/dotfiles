@@ -92,10 +92,10 @@ myModMask :: KeyMask
 myModMask = mod4Mask       -- Sets modkey to super/windows key
 
 myTerminal :: String
-myTerminal = "alacritty"   -- Sets default terminal
+myTerminal = "urxvtc"   -- Sets default terminal
 
 myBrowser :: String
-myBrowser = "firefox-bin"
+myBrowser = "firefox"
 
 myEditor :: String
 myEditor = "nvim"  
@@ -115,7 +115,7 @@ windowCount = gets $ Just . show . length . W.integrate' . W.stack . W.workspace
 myStartupHook :: X ()
 myStartupHook = do
           spawnOnce "picom --experimental-backends &"
-          spawnOnce "feh --bg-fill Downloads/10848851.jpg &"
+          spawnOnce "feh --bg-fill Downloads/22c3fcybb4q61.jpg &"
           spawnOnce "urxvtd --quiet --opendisplay --fork &"
 
 
@@ -214,7 +214,7 @@ myLayoutHook = avoidStruts $ mouseResize $ windowArrange $ T.toggleLayouts float
                                  ||| grid
 
 -- myWorkspaces = [" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "]
-myWorkspaces = [" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "]
+myWorkspaces = [" chat ", " www ", " dev ", " game ", " 5 ", " 6 ", " 7 ", " 8 ", " music "]
 
 myManageHook = manageDocks <+> (isFullscreen --> doFullFloat) <+> manageHook defaultConfig
 
@@ -225,16 +225,15 @@ myLogHook = fadeInactiveLogHook fadeAmount
 myKeys :: [(String, X ())]
 myKeys =
     -- Xmonad
-        [ ("M-C-r", spawn "xmonad --recompile") -- Recompiles xmonad
-        , ("M-S-r", spawn "xmonad --restart")   -- Restarts xmonad
+        [ ("M-S-r", spawn "xmonad --restart")   -- Restarts xmonad
         , ("M-S-q", io exitSuccess)             -- Quits xmonad
 
     -- Flameshot (Screenshotting tool)
         , ("M-<Print>", spawn "flameshot gui")
     -- Useful programs to have a keybinding for launch
-        , ("M-<Return>", spawn $ "urxvtc")
+        , ("M-<Return>", spawn $ myTerminal)
     -- Rofi
-        , ("M-d", spawn "/home/matthew/.config/rofi/launchers/text/launcher.sh")
+        , ("M-d", spawn "rofi -show drun")
 
     -- Kill windows
         , ("M-S-c", kill1)     -- Kill the currently focused client
@@ -244,8 +243,8 @@ myKeys =
         , ("M-f", sendMessage (T.Toggle "floats")) -- Toggles my 'floats' layout
         , ("M-t", withFocused $ windows . W.sink)  -- Push floating window back to tile
         , ("M-S-t", sinkAll)                       -- Push ALL floating windows to tile
-
-	    , ("M-<Left>", sendMessage Shrink)
+    -- Resize Windows 
+	      , ("M-<Left>", sendMessage Shrink)
         , ("M-<Right>", sendMessage Expand)
         , ("M-<Down>", sendMessage MirrorShrink)
         , ("M-<Up>", sendMessage MirrorExpand)
@@ -263,11 +262,8 @@ myKeys =
 
     -- Layouts
         , ("M-<Tab>", sendMessage NextLayout)           -- Switch to next layout
-        , ("M-C-M1-<Up>", sendMessage Arrange)
-        , ("M-C-M1-<Down>", sendMessage DeArrange)
         , ("M-<Space>", sendMessage (MT.Toggle NBFULL) >> sendMessage ToggleStruts) -- Toggles noborder/full
         , ("M-S-<Space>", sendMessage ToggleStruts)     -- Toggles struts
-        , ("M-S-n", sendMessage $ MT.Toggle NOBORDERS)  -- Toggles noborder
         ]
 
 main :: IO ()
