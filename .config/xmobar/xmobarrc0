@@ -2,12 +2,12 @@
 -- install xmobar with these flags: --flags="with_alsa" --flags="with_mpd" --flags="with_xft"  OR --flags="all_extensions"
 -- you can find weather location codes here: http://weather.noaa.gov/index.html
 
-Config { font    = "xft:Droid Sans:pixelsize=11:antialias=true:hinting=true"
-       , additionalFonts = [ "xft:Font Awesome 5 Free:pixelsize=11:antialias=true:hinting=true"
-                            , "xft:mononoki Nerd Font:pixelsize=11:antialias=true:hinting=true"
-                            , "xft:Iosevka:pixelsize=11:antialias=true:hinting=true"
-                            , "xft:mplus Nerd Font:pixelsize=11:antialias=true:hinting=true"
-                            , "xft:mplus Nerd Font Mono:pixelsize=11:antialias=true:hinting=true"
+Config { font    = "xft:Droid Sans:pixelsize=12:antialias=true:hinting=true"
+       , additionalFonts = [ "xft:Font Awesome 5 Free:pixelsize=12:antialias=true:hinting=true"
+                            , "xft:mononoki Nerd Font:pixelsize=12:antialias=true:hinting=true"
+                            , "xft:Iosevka:pixelsize=12:antialias=true:hinting=true"
+                            , "xft:mplus Nerd Font:pixelsize=12:antialias=true:hinting=true"
+                            , "xft:mplus Nerd Font Mono:pixelsize=12:antialias=true:hinting=true"
                            ]
        , bgColor = "#17181a"
        , fgColor = "#bd93f9"

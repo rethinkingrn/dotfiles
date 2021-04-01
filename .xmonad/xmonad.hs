@@ -83,10 +83,7 @@ import XMonad.Util.Run (runProcessWithInput, safeSpawn, spawnPipe)
 import XMonad.Util.SpawnOnce
 
 myFont :: String
-myFont = "xft:SauceCodePro Nerd Font Mono:regular:size=9:antialias=true:hinting=true"
-
-myEmojiFont :: String
-myEmojiFont = "xft:mplus Nerd Font:regular:size=9:antialias=true:hinting=true"
+myFont = "xft:mplus Nerd Font Mono:regular:size=12:antialias=true:hinting=true"
 
 myModMask :: KeyMask
 myModMask = mod4Mask       -- Sets modkey to super/windows key
@@ -214,7 +211,7 @@ myLayoutHook = avoidStruts $ mouseResize $ windowArrange $ T.toggleLayouts float
                                  ||| grid
 
 -- myWorkspaces = [" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "]
-myWorkspaces = [" chat ", " www ", " dev ", " game ", " 5 ", " 6 ", " 7 ", " 8 ", " music "]
+myWorkspaces = [" 1: <fn=5>\xfa25</fn> ", " 2: <fn=5>\xf269</fn> ", " 3: <fn=5>\xf489</fn> ", " 4: <fn=5>\xf7b3</fn> ", " 5 ", " 6 ", " 7 ", " 8 ", " 9: <fn=5>\xf9c6</fn> "]
 
 myManageHook = manageDocks <+> (isFullscreen --> doFullFloat) <+> manageHook defaultConfig
 
