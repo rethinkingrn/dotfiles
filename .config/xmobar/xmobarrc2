@@ -37,10 +37,13 @@ Config { font    = "xft:Droid Sans:pixelsize=12:antialias=true:hinting=true"
                     , Run UnsafeStdinReader
                       -- cpu core temperature monitor
                     , Run CoreTemp       [ "--template" , " <core0>°C"] 10
+                     -- Script that dynamically adjusts xmobar padding depending on number of trayer icons.
+                    , Run Com "/home/matthew/.config/xmobar/trayer-padding-icon.sh" [] "trayerpad" 20
+
                     , Run Battery [ "-t", "<fn=5>\xf578</fn> <left>%"] 60
                       ]
                                                     
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " <icon=haskell_20.xpm/> | %UnsafeStdinReader% | }{| <fc=#b3afc2> <icon=gen2.xpm/> %uname%</fc>  |<fc=#ff5555>%cpu% %coretemp%</fc>  | <fc=#ffb86c>%memory%</fc>  |<fc=#50fa7b>%disku%</fc> | <fc=#8be9fd>%wlp2s0%</fc> | %battery% | <fc=#6272a4>%date%</fc> "
+       , template = " <icon=haskell_20.xpm/> | %UnsafeStdinReader% | }{| <fc=#b3afc2> <icon=gen2.xpm/> %uname%</fc>  |<fc=#ff5555>%cpu% %coretemp%</fc>  | <fc=#ffb86c>%memory%</fc>  |<fc=#50fa7b>%disku%</fc> | <fc=#8be9fd>%wlp2s0%</fc> | %battery% | <fc=#6272a4>%date%</fc> | %trayerpad% "
        }

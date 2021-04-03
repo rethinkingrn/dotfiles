@@ -1,15 +1,15 @@
 
-xmonad.hs:216:78: warning: [-Wdeprecations]
+xmonad.hs:217:78: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
     |
-216 | myManageHook = manageDocks <+> (isFullscreen --> doFullFloat) <+> manageHook defaultConfig
+217 | myManageHook = manageDocks <+> (isFullscreen --> doFullFloat) <+> manageHook defaultConfig
     |                                                                              ^^^^^^^^^^^^^
 
-xmonad.hs:244:1: warning: [-Wtabs]
+xmonad.hs:245:1: warning: [-Wtabs]
     Tab character found here.
     Please use spaces instead.
     |
-244 |               , ("M-<Left>", sendMessage Shrink)
+245 |               , ("M-<Left>", sendMessage Shrink)
     | ^^^^^^^^

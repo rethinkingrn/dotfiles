@@ -113,7 +113,8 @@ myStartupHook :: X ()
 myStartupHook = do
           spawnOnce "picom --experimental-backends &"
           spawnOnce "feh --bg-fill Downloads/22c3fcybb4q61.jpg &"
-          spawnOnce "urxvtd --quiet --opendisplay --fork &"
+          spawnOnce "urxvtd --quiet --opendisplay --fork & "
+          spawnOnce "trayer-srg --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x17181a  --height 24 &"
 
 
 myColorizer :: Window -> Bool -> X (String, String)
