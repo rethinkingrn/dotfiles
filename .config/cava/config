@@ -121,17 +121,23 @@ foreground = '#bd93f9'
 # Gradient mode, only hex defined colors (and thereby ncurses mode) are supported,
 # background must also be defined in hex  or remain commented out. 1 = on, 0 = off.
 # You can define as many as 8 different colors. They range from bottom to top of screen
+#gradient = 1
+#gradient_count = 7
+#gradient_color_1 = '#ff5555'
+#gradient_color_2 = '#ffb86c'
+#gradient_color_3 = '#f1fa8c'
+#gradient_color_4 = '#50fa7b'
+#gradient_color_5 = '#8be9fd'
+#gradient_color_6 = '#6272a4'
+#gradient_color_7 = '#6272a4'
+#;gradient_color_8 = '#cc3333'
 gradient = 1
-gradient_count = 7
-gradient_color_1 = '#ff5555'
-gradient_color_2 = '#ffb86c'
-gradient_color_3 = '#f1fa8c'
-gradient_color_4 = '#50fa7b'
-gradient_color_5 = '#8be9fd'
-gradient_color_6 = '#6272a4'
-gradient_color_7 = '#6272a4'
-;gradient_color_8 = '#cc3333'
-
+gradient_count = 3
+gradient_color_1 = '#81a1c1'
+gradient_color_2 = '#88c0d0'
+gradient_color_3 = '#8fbcbb'
+#gradient_color_3 = '#bd93f9'
+#gradient_color_4 = '#f1fa8c'
 
 
 [smoothing]
