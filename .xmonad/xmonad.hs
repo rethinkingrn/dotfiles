@@ -83,13 +83,13 @@ import XMonad.Util.Run (runProcessWithInput, safeSpawn, spawnPipe)
 import XMonad.Util.SpawnOnce
 
 myFont :: String
-myFont = "xft:mplus Nerd Font Mono:regular:size=12:antialias=true:hinting=true"
+myFont = "xft:Droid Sans:size=12:antialias=true:hinting=true"
 
 myModMask :: KeyMask
 myModMask = mod4Mask       -- Sets modkey to super/windows key
 
 myTerminal :: String
-myTerminal = "urxvtc"   -- Sets default terminal
+myTerminal = "kitty"   -- Sets default terminal
 
 myBrowser :: String
 myBrowser = "firefox"
@@ -112,8 +112,8 @@ windowCount = gets $ Just . show . length . W.integrate' . W.stack . W.workspace
 myStartupHook :: X ()
 myStartupHook = do
           spawnOnce "picom --experimental-backends &"
-          spawnOnce "feh --bg-fill Downloads/22c3fcybb4q61.jpg &"
-          spawnOnce "urxvtd --quiet --opendisplay --fork & "
+          spawnOnce "feh --bg-fill Downloads/Wallpaper-4k-Dark-Moon-Night-Minimal-Art-4k-wallpapers-.jpg &"
+          -- spawnOnce "urxvtd --quiet --opendisplay --fork & "
           spawnOnce "trayer-srg --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x17181a  --height 24 &"
 
 
@@ -163,7 +163,7 @@ mySpacing' i = spacingRaw True (Border i i i i) True (Border i i i i) True
 tiled     = renamed [Replace "tiled"]
            $ windowNavigation
            $ addTabs shrinkText myTabTheme
-           $ subLayout [] (smartBorders Simplest)
+           -- $ subLayout [] (smartBorders Simplest)
            $ limitWindows 12
            $ mySpacing 8
            $ ResizableTall 1 (3/100) (1/2) []
@@ -212,7 +212,7 @@ myLayoutHook = avoidStruts $ mouseResize $ windowArrange $ T.toggleLayouts float
                                  ||| grid
 
 -- myWorkspaces = [" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "]
-myWorkspaces = [" 1: <fn=5>\xfa25</fn> ", " 2: <fn=5>\xf269</fn> ", " 3: <fn=5>\xf489</fn> ", " 4: <fn=5>\xf7b3</fn> ", " 5 ", " 6 ", " 7 ", " 8 ", " 9: <fn=5>\xf9c6</fn> "]
+myWorkspaces = [" 1: <fn=5>\xf489</fn> ", " 2: <fn=5>\xf269</fn> ", " 3: <fn=5>\xfa25</fn> ", " 4: <fn=5>\xf7b3</fn> ", " 5 ", " 6 ", " 7 ", " 8 ", " 9: <fn=5>\xf9c6</fn> "]
 
 myManageHook = manageDocks <+> (isFullscreen --> doFullFloat) <+> manageHook defaultConfig
 
@@ -257,7 +257,8 @@ myKeys =
         , ("M-<Backspace>", promote)      -- Moves focused window to master, others maintain order
         , ("M-S-<Tab>", rotSlavesDown)    -- Rotate all windows except master and keep focus in place
         , ("M-S-d", rotAllDown)       -- Rotate all the windows in the current stack
-
+    -- Multimedia Controls
+        , ("<Pause>", spawn "playerctl play-pause")
     -- Layouts
         , ("M-<Tab>", sendMessage NextLayout)           -- Switch to next layout
         , ("M-<Space>", sendMessage (MT.Toggle NBFULL) >> sendMessage ToggleStruts) -- Toggles noborder/full
