@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -8,7 +15,7 @@ export ZSH="/home/matthew/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="awesomepanda"
+#ZSH_THEME="awesomepanda"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -92,12 +99,11 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 #source $(dirname $(gem which colorls))/tab_complete.sh
+export PATH=$PATH:$HOME/dotnet
 export PATH="/home/matthew/.cargo/bin:$PATH"
 export VISUAL=nvim;
 export EDITOR=nvim;
-
-# Startup thing
-pfetch
+#export TERM=xterm-256color
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -108,15 +114,40 @@ pfetch
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+#####################
+# Aliases           #
+#####################
+alias xmonadhs='nvim ~/.xmonad/xmonad.hs'
+alias merge='xrdb -merge ~/.Xresources'
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias zshrc="nvim ~/.zshrc"
-alias nf="neofetch"
-alias pf="pfetch"
-alias makeconf="sudo nvim /etc/portage/make.conf"
+alias makeconf="doas nvim /etc/portage/make.conf"
 alias clr="clear"
-alias spotify="LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify"
 alias home="cd ~"
-alias kernelcfg="cd /usr/src/linux && sudo make menuconfig"
+alias kernelcfg="cd /usr/src/linux && doas make menuconfig"
 alias nano="nvim"
-alias fstab="sudo nvim /etc/fstab"
-#alias spicetify="sudo /home/matthew/spicetify-cli/spicetify"
+alias spt="/home/matthew/scripts/spt"
+alias nextsong="/home/matthew/scripts/nextsong"
+alias fstab="doas nvim /etc/fstab"
+alias nv="nvim"
+###################
+#Portage Things   #
+###################
+alias depclean="doas emerge --depclean"
+alias deselect="doas emerge --deselect"
+alias sudo="doas"
+#######################
+#  Suckless Software  #
+#######################
+alias editst="nvim ~/dwm/mydwm/st-flexipatch/config.h"
+alias editdwm="nvim ~/dwm/mydwm/dwm-flexipatch/config.h"
+alias installst="cd ~/dwm/mydwm/st-flexipatch && doas make install && cd ~"
+alias installdwm="cd ~/dwm/mydwm/dwm-flexipatch && doas make clean install && cd ~"
+
+export PATH=$HOME/.config/nvcode/utils/bin:$PATH
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+eval "$(starship init zsh)"
+# startup
+#pfetch

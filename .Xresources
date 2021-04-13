@@ -1,5 +1,5 @@
 URxvt.scrollBar: false
-urxvt*font:xft:Hack Nerd Font:pixelsize=15
+urxvt*font:xft:VictorMono Nerd Font Mono:pixelsize=16
 urxvt*cursorColor:          #6699CC
 urxvt*colorBD:              #CCCCFF
 Xft*dpi: 96
@@ -14,26 +14,53 @@ URxvt*tintColor: #ffffff
 URxvt*shading: 0
 URxvt*inheritPixmap: False
 URxvt*depth:      32                                                                                                                                                        
-URxvt.background: [50]#282A36
+URxvt.background: [45]#282A36
 
 
-*.foreground: #F8F8F2
-*.background: #282A36
-*.color0:     #000000
-*.color8:     #4D4D4D
-*.color1:     #FF5555
-*.color9:     #FF6E67
-*.color2:     #50FA7B
-*.color10:    #5AF78E
-*.color3:     #F1FA8C
-*.color11:    #F4F99D
-*.color4:     #BD93F9
-*.color12:    #CAA9FA
-*.color5:     #FF79C6
-*.color13:    #FF92D0
-*.color6:     #8BE9FD
-*.color14:    #9AEDFE
-*.color7:     #BFBFBF
-*.color15:    #E6E6E6
+dwm.normbordercolor: #333645
+dwm.urgbordercolor: #282a36
+dwm.selbordercolor: #3f424d
+dwm.normfloatcolor: #333645
+dwm.selfloatcolor: #3f424d
+
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #ff5555
+#define nord12 #ffb86c
+#define nord13 #f1fa8c
+#define nord14 #50fa7b
+#define nord15 #ff79c6
+
+*.foreground:   nord4
+*.background:   nord0
+*.cursorColor:  nord4
+*fading: 35
+*fadeColor: nord3
+
+*.color0: nord1
+*.color1: nord11
+*.color2: nord14
+*.color3: nord13
+*.color4: nord9
+*.color5: nord15
+*.color6: nord8
+*.color7: nord5
+*.color8: nord3
+*.color9: nord11
+*.color10: nord14
+*.color11: nord13
+*.color12: nord9
+*.color13: nord15
+*.color14: nord7
+*.color15: nord6
 
 
