@@ -1,0 +1,62 @@
+window:
+  # Window dimensions (changes require restart)
+  #
+  # Specified in number of columns/lines, not pixels.
+  # If both are `0`, this setting is ignored.
+  dimensions:
+    columns: 0
+    lines: 0
+
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is not scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 30
+    y: 30
+
+  # Window decorations
+  #
+  # Values for `decorations`:
+  #     - full: Borders and title bar
+  #     - none: Neither borders nor title bar
+  decorations: full
+
+
+colors:
+  # Default colors
+  primary:
+    background: '0x1f252a'
+    foreground: '0xD8DEE9'
+
+  # Normal colors
+  normal:
+    black:   '0x3b4252'
+    red:     '0xff5555'
+    green:   '0x50fa7b'
+    yellow:  '0xf1fa8c'
+    blue:    '0x81a1c1'
+    magenta: '0xff79c6'
+    cyan:    '0x88c0d0'
+    white:   '0xe5e9f0'
+
+  # Bright colors
+  bright:
+    black:   '0x4c566a'
+    red:     '0xff5555'
+    green:   '0x50fa7b'
+    yellow:  '0xf1fa8c'
+    blue:    '0x81a1c1'
+    magenta: '0xff79c6'
+    cyan:    '0x8fbcbb'
+    white:   '0xeceff4'
+
+
+
+font:
+  # The normal (roman) font face to use.
+  # Style can be specified to pick a specific face.
+  normal:
+    family: VictorMono Nerd Font Mono
+    style: Medium
+  size: 12.0
