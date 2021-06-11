@@ -1,6 +1,9 @@
-# this branch buggin, stay on master pls
-# forget about everything i said, i currently use gentoo
-# so if you want dotfiles go gentoo branch
+# I DONT USE ANY OF THESE.
+> I haven't touched this is ages and I switched to another distro and wm
+
+Current setup: [here](https://github.com/rethinkingrn/gentoo-setup) 
+> That repository is still very much WIP
+
 
 # dotfiles
 how the hell does this work
